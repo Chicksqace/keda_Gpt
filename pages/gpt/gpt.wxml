@@ -1,0 +1,23 @@
+<view class="container">
+    <scroll-view class="conversation" scroll-y="{{scrollY}}" scroll-into-view="{{toView}}">
+<!-- 问答一次，打字机的效果 -->
+    <!-- <view class="message">
+    </view> -->
+    
+    <block wx:for="{{msg}}" wx:key="{{index}}">
+      <view class="message {{item.type}}">
+        <view class="content">{{item.content}}</view>
+      </view>
+    </block>
+   
+</scroll-view>
+<view class="fast">
+    <button class="fast_button" bindtap="__e" data-event-opts="{{[['tap',[['changeIpt1']]]]}}">问题一</button>
+<button class="fast_button" bindtap="__e" data-event-opts="{{[['tap',[['changeIpt2']]]]}}">问题二</button>
+<button class="fast_button" bindtap="__e" data-event-opts="{{[['tap',[['changeIpt3']]]]}}">问题三</button>
+</view>
+  <view class="input-container">
+    <input data-event-opts="{{[['input',[['__set_model',['','TEXT','$event',[]]]]]]}}" class="input" value="{{TEXT}}" bindinput="__e"/>
+    <button class="button" data-event-opts="{{[['tap',[['sendToSpark']]]]}}"  bindtap="__e">发送</button>
+  </view>
+</view>

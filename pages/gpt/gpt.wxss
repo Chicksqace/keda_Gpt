@@ -1,0 +1,86 @@
+@import '../../../pages/common/main.wxss';
+/* @import "../../../colorui/icon.wxss"; */
+/* @import '../../../packageOperation5/common/main.wxss'; */
+
+[data-custom-hidden="true"],[bind-data-custom-hidden="true"]{display: none !important;}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    font-size: 30rpx;
+    background-color: #f8f9fa;
+    color: #000000;
+  }
+  
+  .conversation {
+    flex: 1;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  .user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .ai {
+    align-self: flex-start;
+    background-color: #eee;
+    color: #000000;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -60px;
+  }
+  
+  .input {
+    height: 40px;
+    margin-top: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    width: 80px;
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  .fast{
+      position: absolute;
+      display: flex;
+     /* justify-content: space-between; */
+  }
+  .fast_button{
+      /* width: 250rpx; */
+      height: 70rpx;
+      /* text-align: center; */
+      font-size: 25rpx;
+      position: relative;
+      top: 825rpx;
+      left: -20rpx;
+      color: #fff;
+      line-height: 15px;
+      padding: 0 0;
+      /* align-items: center; */
+      /* justify-content: center; */
+      background-color: #007bff;
+  }

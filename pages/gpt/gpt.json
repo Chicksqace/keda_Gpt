@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "人工智能",
+    "navigationBarBackgroundColor": "#E8EBFD",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+  "enablePullDownRefresh": true,
+    "usingComponents": {
+      }
+}
